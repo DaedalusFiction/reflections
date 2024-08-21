@@ -1,0 +1,193 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .box {
+        margin: 0;
+    }
+}
+
+:root {
+    /* --color-background: #f4f5ef; */
+    /* --color-background: #fefcea; */
+    /* --color-background: #fffacb; */
+    --color-background: #f5f2dd;
+    --color-background-lighter: #fffceb;
+    --color-background-accent: #ff8c42;
+    /* --color-primary: #a52422; */
+    /* --color-primary: #30e460; */
+    --color-primary: #960200;
+    --color-secondary: #ff8c42;
+    --color-text: #1d1e18;
+    --color-text-light: #eeeeee;
+    --color-text-muted: #9e9e9e;
+    --color-text-light-muted: #e4e2e2;
+    --color-border: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    @apply bg-[var(--color-background)];
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    @apply font-header uppercase tracking-tighter font-bold text-3xl md:text-7xl;
+}
+
+h3 {
+    @apply font-header font-light text-3xl md:text-6xl tracking-tighter;
+}
+
+h4 {
+    @apply font-header font-light text-3xl md:text-5xl;
+}
+
+p {
+    @apply max-w-prose font-serif;
+}
+
+/* img {
+    @apply rounded-xl;
+} */
+
+label {
+    @apply font-header;
+}
+
+@layer components {
+    .btn {
+        @apply px-8 py-2 bg-[var(--color-primary)] text-lg duration-100 text-white rounded-sm uppercase;
+    }
+    .btn-disabled {
+        @apply cursor-not-allowed bg-gray-400;
+    }
+
+    .btn:hover {
+        filter: brightness(120%);
+    }
+    .btn:active {
+        filter: brightness(90%);
+    }
+
+    .animation-underline {
+        display: block;
+        position: relative;
+    }
+
+    /* Fade in */
+    .animation-underline::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 0.1em;
+        background-color: currentColor;
+        opacity: 0;
+        transition: opacity 300ms, transform 300ms;
+    }
+
+    .animation-underline:hover::after,
+    .animation-underline:focus::after {
+        opacity: 1;
+        transform: translate3d(0, 0.2em, 0);
+    }
+
+    .blur-in {
+        animation: blur-in;
+        animation-duration: 0.75s;
+        animation-fill-mode: backwards;
+    }
+
+    .fade-in-and-right {
+        animation: fade-in-and-right;
+        animation-duration: 0.75s;
+        animation-fill-mode: backwards;
+    }
+
+    .delayed-100 {
+        animation-delay: 100ms;
+    }
+    .delayed-200 {
+        animation-delay: 200ms;
+    }
+    .delayed-300 {
+        animation-delay: 300ms;
+    }
+    .delayed-400 {
+        animation-delay: 400ms;
+    }
+    .delayed-500 {
+        animation-delay: 500ms;
+    }
+
+    @keyframes blur-in {
+        0% {
+            filter: blur(10px);
+            opacity: 0;
+        }
+        100% {
+            filter: blur(0px);
+            opacity: 100%;
+        }
+    }
+    @keyframes fade-in-and-right {
+        0% {
+            transform: translateX(-2rem);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 100%;
+        }
+    }
+}
+
+@font-face {
+    font-family: Figtree;
+    src: url("~/assets/fonts/Figtree.ttf") format(truetype);
+}
+@font-face {
+    font-family: Manrope;
+    src: url("~/assets/fonts/Manrope.ttf") format(truetype);
+}
+@font-face {
+    font-family: CrimsonPro;
+    src: url("~/assets/fonts/CrimsonPro.ttf") format(truetype);
+}
+@font-face {
+    font-family: Archivo;
+    src: url("~/assets/fonts/Archivo.ttf") format(truetype);
+}
+@font-face {
+    font-family: Chivo;
+    src: url("~/assets/fonts/Chivo.ttf") format(truetype);
+}
+@font-face {
+    font-family: Inter;
+    src: url("~/assets/fonts/Inter.ttf") format(truetype);
+}
+
+@font-face {
+    font-family: EBGaramond;
+    src: url("~/assets/fonts/EBGaramond.ttf") format(truetype);
+}
+@font-face {
+    font-family: RobotoSlab;
+    src: url("~/assets/fonts/RobotoSlab.woff2") format(woff2);
+}
+@font-face {
+    font-family: Newsreader;
+    src: url("~/assets/fonts/Newsreader.woff2") format(woff2);
+}
