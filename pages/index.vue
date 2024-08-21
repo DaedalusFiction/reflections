@@ -5,15 +5,15 @@
                 <div
                     class="hero rounded-xl border flex items-center justify-center min-h-[85vh]"
                 >
-                    <div class="w-full flex justify-center items-center">
+                    <!-- <div class="w-full flex justify-center items-center">
                         <p
-                            class="text-[var(--color-text-light)] hero-text text-center lg:w-[45rem] py-4 px-4 lg:px-16 text-5xl"
+                            class="text-[#ff4b17] font-header text-center lg:w-[45rem] p-4 text-4xl md:text-7xl uppercase backdrop-blur-sm"
                         >
                             Reflections
                         </p>
-                    </div>
+                    </div> -->
                 </div>
-                <p class="text-xs text-end max-w-none mt-1">
+                <!-- <p class="text-xs text-end max-w-none mt-1">
                     Photo by
                     <a
                         href="https://unsplash.com/@bardcanele?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
@@ -24,7 +24,7 @@
                         href="https://unsplash.com/photos/calm-body-of-water-near-green-trees-and-mountain-at-daytime-YDG0lDHz9PI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
                         >Unsplash</a
                     >
-                </p>
+                </p> -->
             </section>
 
             <div id="about" class="border-t border-b py-16 bg-backgroundAccent">
@@ -92,11 +92,11 @@
                     >
                         <div>
                             <img
-                                class="object-cover filter max-h-96 grayscale hover:grayscale-0 transition rounded-lg"
-                                src="~/assets/images/flowerReflection.webp"
+                                class="object-cover filter max-h-96 transition rounded-lg"
+                                src="~/assets/images/reflectionsTwo.webp"
                                 alt=""
                             />
-                            <p class="text-xs text-end max-w-none mt-1">
+                            <!-- <p class="text-xs text-end max-w-none mt-1">
                                 Photo by
                                 <a
                                     href="https://unsplash.com/@peterknelson?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
@@ -107,7 +107,7 @@
                                     href="https://unsplash.com/photos/purple-petaled-flower-on-water-fzZ4NMH-KTM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
                                     >Unsplash</a
                                 >
-                            </p>
+                            </p> -->
                         </div>
                     </div>
                 </div>
@@ -124,11 +124,11 @@
                     >
                         <div>
                             <img
-                                class="object-cover filter max-h-96 grayscale hover:grayscale-0 transition rounded-lg"
-                                src="~/assets/images/birdReflection.webp"
+                                class="object-cover filter max-h-96 transition rounded-lg"
+                                src="~/assets/images/reflectionsThree.webp"
                                 alt=""
                             />
-                            <p class="text-xs text-end max-w-none mt-1">
+                            <!-- <p class="text-xs text-end max-w-none mt-1">
                                 Photo by
                                 <a
                                     href="https://unsplash.com/@borisworkshop?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
@@ -139,7 +139,7 @@
                                     href="https://unsplash.com/photos/yellow-bird-on-sakura-tree-RLLR0oRz16Y?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
                                     >Unsplash</a
                                 >
-                            </p>
+                            </p> -->
                         </div>
                     </div>
                     <div
@@ -230,13 +230,9 @@ section {
 }
 
 .hero {
-    background: url("~/assets/images/lakeReflection.webp");
+    background: url("~/assets/images/reflectionsTwo.webp");
     background-position: center;
     background-size: cover;
-}
-
-.hero-text {
-    font-family: Tangerine;
 }
 
 .titles {
@@ -245,6 +241,6 @@ section {
 }
 
 .header {
-    @apply text-5xl font-[Tangerine] mb-2 text-center;
+    @apply text-4xl font-header mb-2 text-center;
 }
 </style>

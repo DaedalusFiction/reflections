@@ -3,7 +3,7 @@
         <NuxtLink :href="href" class="cursor-pointer"
             ><div class="relative arrow-link inline-block">
                 <p
-                    class="font-sans uppercase arrow-text inline-block whitespace-nowrap"
+                    class="font-header uppercase arrow-text inline-block whitespace-nowrap"
                 >
                     {{ text }}
                 </p>

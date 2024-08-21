@@ -40,12 +40,10 @@
             >
                 <h1
                     id="logo"
-                    class="logo whitespace-nowrap font-light font-header"
+                    class="logo whitespace-nowrap font-light font-sans"
                 >
-                    <span class="span1">Charlottesville</span
-                    ><span class="span2 text-[var(--color-primary)]"
-                        >Reflections</span
-                    >
+                    <span class="span1 text-primary">Reflections</span
+                    ><span class="span2">Charlottesville</span>
                 </h1></NuxtLink
             >
             <!-- <button
@@ -88,8 +86,8 @@ onMounted(() => {
         const logo = document.querySelector("#logo");
         const logoAnimation = gsap
             .timeline({ paused: true })
-            .fromTo(".logo .span1", { width: "1rem" }, { width: "10rem" })
-            .fromTo(".logo .span2", { width: "1rem" }, { width: "8rem" }, "<");
+            .fromTo(".logo .span1", { width: "1rem" }, { width: "8rem" })
+            .fromTo(".logo .span2", { width: "1rem" }, { width: "10rem" }, "<");
         logo.addEventListener("mouseenter", () => {
             logoAnimation.play();
         });

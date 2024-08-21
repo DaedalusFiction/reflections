@@ -1,8 +1,8 @@
 <template>
     <section id="contact">
-        <div class="container max-w-5xl mx-auto py-12">
+        <div class="container max-w-4xl mx-auto py-12">
             <div class="">
-                <h4 class="text-5xl font-[Tangerine] text-center">
+                <h4 class="text-4xl font-header text-center">
                     Take the next step
                 </h4>
                 <br />

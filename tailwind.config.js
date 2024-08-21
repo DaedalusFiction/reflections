@@ -2,17 +2,19 @@ module.exports = {
     theme: {
         //
         fontFamily: {
-            header: ["Inter", "sans-serif"],
+            header: ["Archivo", "sans-serif"],
             sans: ["Inter", "sans-serif"],
             serif: ["Newsreader", "serif"],
         },
         extend: {
             colors: {
-                primary: "#3AAED8",
-                secondary: "#388659",
+                primary: "#F58A07",
+                secondary: "#f71d00",
                 accent: "#70D6FF",
-                background: "#F5F2DD",
-                backgroundAccent: "#fffceb",
+                // background: "#F5F2DD",
+                // backgroundAccent: "#fffceb",
+                background: "#EDE7D9",
+                backgroundAccent: "#F5F3F5",
                 text: "#1d1e18",
             },
             boxShadow: {

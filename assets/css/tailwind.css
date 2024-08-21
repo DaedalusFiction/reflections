@@ -50,7 +50,7 @@ h3 {
 }
 
 h4 {
-    @apply font-header font-light text-3xl md:text-5xl;
+    @apply font-header font-light text-3xl md:text-4xl;
 }
 
 p {
@@ -67,7 +67,7 @@ label {
 
 @layer components {
     .btn {
-        @apply px-8 py-2 bg-[var(--color-primary)] text-lg duration-100 text-white rounded-sm uppercase;
+        @apply px-8 py-2 bg-primary text-lg duration-100 text-white rounded-sm uppercase;
     }
     .btn-disabled {
         @apply cursor-not-allowed bg-gray-400;
