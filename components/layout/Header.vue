@@ -1,20 +1,39 @@
 <template>
     <header class="fixed top-0 z-20 w-full">
-        <div class="p-4 flex justify-between">
-            <nav class="flex gap-4">
-                <NuxtLink class="hover:text-primary transition" to="#about"
-                    ><p>Who we are</p></NuxtLink
-                >
-                <NuxtLink class="hover:text-primary transition" to="#services"
-                    ><p>What we do</p></NuxtLink
-                >
-                <NuxtLink class="hover:text-primary transition" to="#structure"
-                    ><p>How we heal</p></NuxtLink
-                >
-                <NuxtLink class="hover:text-primary transition" to="#contact"
-                    ><p>Contact</p></NuxtLink
-                >
-            </nav>
+        <div
+            class="p-4 flex justify-between items-center flex-row-reverse md:flex-row"
+        >
+            <div class="h-full">
+                <div class="flex md:hidden">
+                    <button
+                        class="ml-4 font-semibold hover:brightness-125"
+                        @click="expand"
+                        aria-label="Menu"
+                    >
+                        <IconsHamburger class="w-8" />
+                    </button>
+                </div>
+                <nav class="hidden md:flex gap-4">
+                    <NuxtLink class="hover:text-primary transition" to="#about"
+                        ><p>Who we are</p></NuxtLink
+                    >
+                    <NuxtLink
+                        class="hover:text-primary transition"
+                        to="#services"
+                        ><p>What we do</p></NuxtLink
+                    >
+                    <NuxtLink
+                        class="hover:text-primary transition"
+                        to="#structure"
+                        ><p>How we heal</p></NuxtLink
+                    >
+                    <NuxtLink
+                        class="hover:text-primary transition"
+                        to="#contact"
+                        ><p>Contact</p></NuxtLink
+                    >
+                </nav>
+            </div>
             <NuxtLink
                 to="/"
                 class="link flex gap-4 items-center translate-y-1.5"
@@ -88,9 +107,10 @@ const expand = () => {
 };
 
 const menuItems = [
-    { text: "work", href: "/work" },
-    { text: "about", href: "/about" },
-    { text: "contact", href: "/contact" },
+    { text: "Who we are", href: "#about" },
+    { text: "What we do", href: "#services" },
+    { text: "How we heal", href: "#structure" },
+    { text: "Contact", href: "#contact" },
 ];
 </script>
 

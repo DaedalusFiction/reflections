@@ -7,7 +7,7 @@
                 >
                     <div class="w-full flex justify-center items-center">
                         <p
-                            class="text-[var(--color-text-light)] hero-text text-center backdrop-blur-lg lg:backdrop-blur-0 lg:w-[45rem] py-4 px-4 lg:px-16 text-5xl"
+                            class="text-[var(--color-text-light)] hero-text text-center lg:w-[45rem] py-4 px-4 lg:px-16 text-5xl"
                         >
                             Reflections
                         </p>
@@ -56,7 +56,9 @@
                 <h4 class="header">What we do</h4>
                 <br />
                 <div class="grid grid-cols-12 gap-8">
-                    <div class="col-span-5 h-full flex items-center">
+                    <div
+                        class="col-span-12 md:col-span-5 h-full flex items-center"
+                    >
                         <div>
                             <p class="text-[var(--color-text)] w-full">
                                 In a small group setting participants can work
@@ -85,7 +87,9 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-span-7 flex justify-center items-center">
+                    <div
+                        class="col-span-12 md:col-span-7 flex justify-center items-center"
+                    >
                         <div>
                             <img
                                 class="object-cover w-full filter max-h-96 grayscale hover:grayscale-0 transition rounded-lg"
@@ -116,7 +120,7 @@
                 <br />
                 <div class="max-w-7xl mx-auto grid grid-cols-12 gap-8">
                     <div
-                        class="col-span-7 flex h-full justify-center items-center"
+                        class="col-span-12 md:col-span-7 flex h-full justify-center items-center"
                     >
                         <div>
                             <img
@@ -138,7 +142,9 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-span-5 h-full flex items-center">
+                    <div
+                        class="col-span-12 md:col-span-5 h-full flex items-center"
+                    >
                         <div>
                             <ul>
                                 <li>

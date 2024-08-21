@@ -2,7 +2,7 @@
     <section id="contact">
         <div class="container max-w-5xl mx-auto py-12">
             <div class="">
-                <h4 class="md:text-5xl font-[Tangerine] text-center">
+                <h4 class="text-5xl font-[Tangerine] text-center">
                     Take the next step
                 </h4>
                 <br />
