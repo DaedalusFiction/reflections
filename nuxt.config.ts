@@ -4,7 +4,7 @@ export default defineNuxtConfig({
     modules: ["@nuxtjs/tailwindcss"],
     app: {
         head: {
-            title: "Fictional Web",
+            title: "Reflections",
             link: [
                 {
                     rel: "apple-touch-icon",
@@ -36,7 +36,7 @@ export default defineNuxtConfig({
             meta: [
                 {
                     name: "description",
-                    content: "Website design and development",
+                    content: "Body-Positive Group Therapy",
                 },
             ],
         },

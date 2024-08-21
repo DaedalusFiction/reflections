@@ -2,14 +2,14 @@
     <header class="fixed top-0 z-20 w-full">
         <div class="p-4 flex justify-between">
             <nav class="flex gap-4">
-                <NuxtLink class="hover:text-primary transition" to="#portfolio"
-                    ><p>Portfolio</p></NuxtLink
-                >
                 <NuxtLink class="hover:text-primary transition" to="#about"
-                    ><p>About</p></NuxtLink
+                    ><p>Who we are</p></NuxtLink
                 >
                 <NuxtLink class="hover:text-primary transition" to="#services"
-                    ><p>Services</p></NuxtLink
+                    ><p>What we do</p></NuxtLink
+                >
+                <NuxtLink class="hover:text-primary transition" to="#structure"
+                    ><p>How we heal</p></NuxtLink
                 >
                 <NuxtLink class="hover:text-primary transition" to="#contact"
                     ><p>Contact</p></NuxtLink
@@ -23,8 +23,10 @@
                     id="logo"
                     class="logo whitespace-nowrap font-light font-header"
                 >
-                    <span class="span1">FICTIONAL</span
-                    ><span class="span2 text-[var(--color-primary)]">WEB</span>
+                    <span class="span1">Charlottesville</span
+                    ><span class="span2 text-[var(--color-primary)]"
+                        >Reflections</span
+                    >
                 </h1></NuxtLink
             >
             <!-- <button
@@ -67,13 +69,8 @@ onMounted(() => {
         const logo = document.querySelector("#logo");
         const logoAnimation = gsap
             .timeline({ paused: true })
-            .fromTo(".logo .span1", { width: "1rem" }, { width: "8rem" })
-            .fromTo(
-                ".logo .span2",
-                { width: "1.5rem" },
-                { width: "3.25rem" },
-                "<"
-            );
+            .fromTo(".logo .span1", { width: "1rem" }, { width: "10rem" })
+            .fromTo(".logo .span2", { width: "1rem" }, { width: "8rem" }, "<");
         logo.addEventListener("mouseenter", () => {
             logoAnimation.play();
         });

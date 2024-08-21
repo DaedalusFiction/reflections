@@ -1,93 +1,195 @@
 <template>
     <div ref="main" class="mt-24" id="main">
         <div class="">
-            <section class="hero rounded-xl border mx-auto max-w-7xl">
+            <section class="mx-auto max-w-7xl pb-16">
                 <div
-                    class="flex items-center justify-center lg:justify-end lg:items-end w-full min-h-[85vh]"
+                    class="hero rounded-xl border flex items-center justify-center w-full min-h-[85vh]"
                 >
-                    <div class="hero-text w-full py-16 flex lg:justify-end">
+                    <div class="w-full flex justify-center items-center">
                         <p
-                            class="text-[var(--color-text)] text-center backdrop-blur-lg lg:backdrop-blur-0 lg:text-start lg:w-[35rem] py-4 px-4 lg:px-16 text-3xl"
+                            class="text-[var(--color-text-light)] hero-text text-center backdrop-blur-lg lg:backdrop-blur-0 lg:w-[45rem] py-4 px-4 lg:px-16 text-5xl"
                         >
-                            As a designer and web developer, I help authors,
-                            artists, and creatives cultivate their online
-                            presences.
+                            Reflections
                         </p>
                     </div>
                 </div>
+                <p class="text-xs text-end max-w-none mt-1">
+                    Photo by
+                    <a
+                        href="https://unsplash.com/@bardcanele?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                        >Barb Canale</a
+                    >
+                    on
+                    <a
+                        href="https://unsplash.com/photos/calm-body-of-water-near-green-trees-and-mountain-at-daytime-YDG0lDHz9PI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                        >Unsplash</a
+                    >
+                </p>
             </section>
-            <section class="my-12 mx-auto max-w-7xl">
-                <h2 id="portfolio" class="text-xl mb-2">Portfolio</h2>
-                <div class="grid grid-cols-12 gap-3">
-                    <component
-                        v-for="(project, index) in portfolio"
-                        :key="project.name"
-                        :is="
-                            selectedProject === index
-                                ? SectionsProjectPreviewExtended
-                                : SectionsProjectPreview
-                        "
-                        :project="portfolio[index]"
-                        :projectIndex="index"
-                        :isSelectedProject="selectedProject === index"
-                        @selectProject="
-                            handleSelectProject(index, project.name)
-                        "
-                    />
-                </div>
-            </section>
-            <div class="border-t border-b py-12 bg-backgroundAccent">
-                <section class="mx-auto max-w-7xl">
-                    <h3 id="about" class="text-xl mb-2 uppercase font-bold">
-                        About
-                    </h3>
-                    <div class="grid grid-cols-12 gap-12">
-                        <div class="col-span-8 h-full flex items-center">
-                            <div class="">
-                                <p
-                                    class="text-[var(--color-text)] text-3xl md:indent-52"
-                                >
-                                    My name is David Sorensen, and I believe
-                                    that the number of underappreciated artists
-                                    and creatives in this world is too damn
-                                    high. My mission is to fix that.
-                                </p>
-                                <br />
-                                <p>
-                                    As a designer and web developer, I do that
-                                    by creating virtual spaces that highlight
-                                    the incredible work that people out there
-                                    are doing. Whether you're a musician, actor,
-                                    culinarian, poet, sculptor, cinematographer,
-                                    novelist, painter, stylist, mechanic,
-                                    playwright, weaver, potter, blacksmith,
-                                    chef, cosmetologist, arborist, photographer,
-                                    videographer, calligrapher, woodworker,
-                                    luthier, or cobbler...
-                                </p>
-                                <br />
-                                <div class="flex gap-1 items-center">
-                                    <p>...Let's show the</p>
-                                    <IconsWorld class="w-6" />
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            class="col-span-4 flex justify-center items-center"
-                        >
-                            <img
-                                class="object-cover w-full filter max-h-96 grayscale hover:grayscale-0 transition rounded-lg"
-                                src="~/assets/images/profile-river.webp"
-                                alt=""
-                            />
-                        </div>
+
+            <div id="about" class="border-t border-b py-16 bg-backgroundAccent">
+                <section class="mx-auto max-w-7xl flex justify-center">
+                    <div>
+                        <h3 class="header">Who we are</h3>
+                        <br />
+                        <p class="text-[var(--color-text)] text-center w-full">
+                            Reflections is a Charlottesville therapy group
+                            designed for anyone who identifies as female. We
+                            discuss body image and cultural influence in a safe
+                            and confidential environment.
+                        </p>
+                        <br />
+                        <p class="text-[var(--color-text)] text-center w-full">
+                            In addition to sharing experiences, group therapy
+                            helps patients combat negative self-talk while
+                            learning new strategies to gain confidence.
+                        </p>
+                        <br />
+                        <p class="text-[var(--color-text)] text-center w-full">
+                            Our next six-week session begins
+                            <strong> October 1st, 2024. </strong>
+                        </p>
                     </div>
                 </section>
             </div>
-            <section class="max-w-7xl mx-auto py-12">
-                <h4 id="about" class="text-xl mb-2 uppercase font-bold">
-                    Services
-                </h4>
+            <section id="services" class="max-w-7xl mx-auto py-16">
+                <h4 class="header">What we do</h4>
+                <br />
+                <div class="grid grid-cols-12 gap-8">
+                    <div class="col-span-5 h-full flex items-center">
+                        <div>
+                            <p class="text-[var(--color-text)] w-full">
+                                In a small group setting participants can work
+                                through issues related to body image.
+                            </p>
+                            <br />
+                            <p class="mb-2">
+                                Body image therapy can help with:
+                            </p>
+                            <ul>
+                                <li><p>&bull; Ruminating thoughts</p></li>
+                                <li>
+                                    <p>&bull; Comparing one's self to others</p>
+                                </li>
+                                <li><p>&bull; Food anxiety</p></li>
+                                <li><p>&bull; Self-esteem</p></li>
+                            </ul>
+                            <br />
+                            <p>
+                                This form of therapy aims to improve how
+                                participants perceive and feel about their
+                                bodies, often addressing issues such as current
+                                media culture, negative body image, disordered
+                                eating, aging, and related emotional and
+                                psychological struggles.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-span-7 flex justify-center items-center">
+                        <div>
+                            <img
+                                class="object-cover w-full filter max-h-96 grayscale hover:grayscale-0 transition rounded-lg"
+                                src="~/assets/images/flowerReflection.webp"
+                                alt=""
+                            />
+                            <p class="text-xs text-end max-w-none mt-1">
+                                Photo by
+                                <a
+                                    href="https://unsplash.com/@peterknelson?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                                    >Peter Nelson</a
+                                >
+                                on
+                                <a
+                                    href="https://unsplash.com/photos/purple-petaled-flower-on-water-fzZ4NMH-KTM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                                    >Unsplash</a
+                                >
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section
+                id="structure"
+                class="border-t border-b py-16 bg-backgroundAccent"
+            >
+                <h5 class="header">How we heal</h5>
+                <br />
+                <div class="max-w-7xl mx-auto grid grid-cols-12 gap-8">
+                    <div
+                        class="col-span-7 flex h-full justify-center items-center"
+                    >
+                        <div>
+                            <img
+                                class="object-cover w-full filter max-h-96 grayscale hover:grayscale-0 transition rounded-lg"
+                                src="~/assets/images/birdReflection.webp"
+                                alt=""
+                            />
+                            <p class="text-xs text-end max-w-none mt-1">
+                                Photo by
+                                <a
+                                    href="https://unsplash.com/@borisworkshop?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                                    >Boris Smokrovic</a
+                                >
+                                on
+                                <a
+                                    href="https://unsplash.com/photos/yellow-bird-on-sakura-tree-RLLR0oRz16Y?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                                    >Unsplash</a
+                                >
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-span-5 h-full flex items-center">
+                        <div>
+                            <ul>
+                                <li>
+                                    <h6 class="text-xl">Skills Development</h6>
+                                    <p class="md:pl-4 py-2">
+                                        Build coping strategies and self-care
+                                        techniques to manage negative thoughts
+                                        and feelings about your body
+                                    </p>
+                                </li>
+                                <li>
+                                    <h6 class="text-xl">
+                                        Support and Validation
+                                    </h6>
+                                    <p class="md:pl-4 py-2">
+                                        Gain support from others who have
+                                        similar experiences
+                                    </p>
+                                </li>
+                                <li>
+                                    <h6 class="text-xl">
+                                        Cognitive Behavioral Techniques
+                                    </h6>
+                                    <p class="md:pl-4 py-2">
+                                        Identify and challenge distorted
+                                        thoughts about body image and replacing
+                                        them with healthier perspectives
+                                    </p>
+                                </li>
+                                <li>
+                                    <h6 class="text-xl">
+                                        Self-Acceptance Exercises
+                                    </h6>
+                                    <p class="md:pl-4 py-2">
+                                        Engage in activities that promote
+                                        self-compassion and acceptance of your
+                                        body
+                                    </p>
+                                </li>
+                                <li>
+                                    <h6 class="text-xl">Education</h6>
+                                    <p class="md:pl-4 py-2">
+                                        Learn about body image, self-esteem, and
+                                        the impact of societal standards and
+                                        media
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </section>
             <SectionsSubscribe />
         </div>
@@ -96,9 +198,6 @@
 
 <script setup>
 import { ref } from "vue";
-import { portfolio } from "../assets/data";
-import SectionsProjectPreview from "../components/sections/ProjectPreview.vue";
-import SectionsProjectPreviewExtended from "../components/sections/ProjectPreviewExtended.vue";
 
 const selectedProject = ref(0);
 
@@ -125,13 +224,21 @@ section {
 }
 
 .hero {
-    background: url("~/assets/images/background/rose2.webp");
+    background: url("~/assets/images/lakeReflection.webp");
     background-position: center;
     background-size: cover;
+}
+
+.hero-text {
+    font-family: Tangerine;
 }
 
 .titles {
     @apply h-8 lg:h-16;
     overflow: hidden;
+}
+
+.header {
+    @apply text-5xl font-[Tangerine] mb-2 text-center;
 }
 </style>

@@ -1,26 +1,26 @@
 <template>
-    <section>
-        <div class="container mx-auto p-4 py-24 md:px-24">
-            <div class="p-4 md:p-20">
-                <h4 class="font-extrabold md:text-5xl scroll-fade-up">
-                    TELL ME YOUR THOUGHTS
+    <section id="contact">
+        <div class="container max-w-5xl mx-auto py-12">
+            <div class="">
+                <h4 class="md:text-5xl font-[Tangerine] text-center">
+                    Take the next step
                 </h4>
                 <br />
-                <p class="scroll-fade-up">
-                    Interested? Drop a line and let's talk!
-                </p>
+                <p class="text-center"></p>
             </div>
-            <div class="md:px-16 md:py-8 flex flex-col md:flex-row">
+            <div
+                class="md:py-8 max-w-lg mx-auto flex gap-4 flex-col md:flex-row"
+            >
                 <div class="grow">
                     <div v-if="!isSent">
                         <input
-                            class="w-full bg-[var(--color-background)] text-2xl p-4 focus:outline-none focus:border-b"
+                            class="w-full bg-[var(--color-background)] p-4 focus:outline-none focus:border-b"
                             v-model="email"
                             placeholder="EMAIL"
                         />
                         <textarea
                             rows="4"
-                            class="w-full bg-[var(--color-background)] text-2xl p-4 focus:outline-none focus:border-b"
+                            class="w-full bg-[var(--color-background)] p-4 focus:outline-none focus:border-b"
                             v-model="message"
                             placeholder="MESSAGE"
                         />

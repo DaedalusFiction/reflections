@@ -17,7 +17,7 @@
     --color-background-accent: #ff8c42;
     /* --color-primary: #a52422; */
     /* --color-primary: #30e460; */
-    --color-primary: #960200;
+    --color-primary: #3aaed8;
     --color-secondary: #ff8c42;
     --color-text: #1d1e18;
     --color-text-light: #eeeeee;
@@ -182,6 +182,10 @@ label {
 @font-face {
     font-family: EBGaramond;
     src: url("~/assets/fonts/EBGaramond.ttf") format(truetype);
+}
+@font-face {
+    font-family: Tangerine;
+    src: url("~/assets/fonts/Tangerine.ttf") format(truetype);
 }
 @font-face {
     font-family: RobotoSlab;
