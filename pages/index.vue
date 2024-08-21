@@ -3,7 +3,7 @@
         <div class="">
             <section class="mx-auto max-w-7xl pb-16">
                 <div
-                    class="hero rounded-xl border flex items-center justify-center w-full min-h-[85vh]"
+                    class="hero rounded-xl border flex items-center justify-center min-h-[85vh]"
                 >
                     <div class="w-full flex justify-center items-center">
                         <p
@@ -32,20 +32,20 @@
                     <div>
                         <h3 class="header">Who we are</h3>
                         <br />
-                        <p class="text-[var(--color-text)] text-center w-full">
+                        <p class="text-[var(--color-text)] text-center">
                             Reflections is a Charlottesville therapy group
                             designed for anyone who identifies as female. We
                             discuss body image and cultural influence in a safe
                             and confidential environment.
                         </p>
                         <br />
-                        <p class="text-[var(--color-text)] text-center w-full">
+                        <p class="text-[var(--color-text)] text-center">
                             In addition to sharing experiences, group therapy
                             helps patients combat negative self-talk while
                             learning new strategies to gain confidence.
                         </p>
                         <br />
-                        <p class="text-[var(--color-text)] text-center w-full">
+                        <p class="text-[var(--color-text)] text-center">
                             Our next six-week session begins
                             <strong> October 1st, 2024. </strong>
                         </p>
@@ -60,7 +60,7 @@
                         class="col-span-12 md:col-span-5 h-full flex items-center"
                     >
                         <div>
-                            <p class="text-[var(--color-text)] w-full">
+                            <p class="text-[var(--color-text)]">
                                 In a small group setting participants can work
                                 through issues related to body image.
                             </p>
@@ -92,7 +92,7 @@
                     >
                         <div>
                             <img
-                                class="object-cover w-full filter max-h-96 grayscale hover:grayscale-0 transition rounded-lg"
+                                class="object-cover filter max-h-96 grayscale hover:grayscale-0 transition rounded-lg"
                                 src="~/assets/images/flowerReflection.webp"
                                 alt=""
                             />
@@ -124,7 +124,7 @@
                     >
                         <div>
                             <img
-                                class="object-cover w-full filter max-h-96 grayscale hover:grayscale-0 transition rounded-lg"
+                                class="object-cover filter max-h-96 grayscale hover:grayscale-0 transition rounded-lg"
                                 src="~/assets/images/birdReflection.webp"
                                 alt=""
                             />
