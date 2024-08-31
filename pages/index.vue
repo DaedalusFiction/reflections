@@ -35,7 +35,7 @@
             <section id="services" class="max-w-7xl mx-auto py-16">
                 <h4 class="header">What we do</h4>
                 <br />
-                <div class="grid grid-cols-12 gap-8">
+                <div class="flex flex-col md:grid grid-cols-12 gap-8">
                     <div
                         class="col-span-12 md:col-span-5 h-full flex items-center"
                     >
@@ -72,22 +72,10 @@
                     >
                         <div>
                             <img
-                                class="filter max-h-96 transition rounded-lg"
+                                class="filter transition rounded-lg"
                                 src="~/assets/images/reflectionsTwo.webp"
                                 alt=""
                             />
-                            <!-- <p class="text-xs text-end max-w-none mt-1">
-                                Photo by
-                                <a
-                                    href="https://unsplash.com/@peterknelson?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-                                    >Peter Nelson</a
-                                >
-                                on
-                                <a
-                                    href="https://unsplash.com/photos/purple-petaled-flower-on-water-fzZ4NMH-KTM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-                                    >Unsplash</a
-                                >
-                            </p> -->
                         </div>
                     </div>
                 </div>
@@ -98,29 +86,15 @@
             >
                 <h5 class="header">How we heal</h5>
                 <br />
-                <div class="max-w-7xl mx-auto grid grid-cols-12 gap-8">
-                    <div
-                        class="col-span-12 md:col-span-7 flex h-full justify-center items-center"
-                    >
-                        <div>
-                            <img
-                                class="filter max-h-96 transition rounded-lg"
-                                src="~/assets/images/reflectionsThree.webp"
-                                alt=""
-                            />
-                            <!-- <p class="text-xs text-end max-w-none mt-1">
-                                Photo by
-                                <a
-                                    href="https://unsplash.com/@borisworkshop?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-                                    >Boris Smokrovic</a
-                                >
-                                on
-                                <a
-                                    href="https://unsplash.com/photos/yellow-bird-on-sakura-tree-RLLR0oRz16Y?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-                                    >Unsplash</a
-                                >
-                            </p> -->
-                        </div>
+                <div
+                    class="max-w-7xl mx-auto flex flex-col md:grid grid-cols-12 gap-8"
+                >
+                    <div class="col-span-12 md:col-span-7">
+                        <img
+                            class="filter transition rounded-lg"
+                            src="~/assets/images/reflectionsThree.webp"
+                            alt=""
+                        />
                     </div>
                     <div
                         class="col-span-12 md:col-span-5 h-full flex items-center"
