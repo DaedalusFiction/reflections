@@ -4,27 +4,7 @@
             <section class="mx-auto max-w-7xl pb-16">
                 <div
                     class="hero rounded-xl border flex items-center justify-center min-h-[85vh]"
-                >
-                    <!-- <div class="w-full flex justify-center items-center">
-                        <p
-                            class="text-[#ff4b17] font-header text-center lg:w-[45rem] p-4 text-4xl md:text-7xl uppercase backdrop-blur-sm"
-                        >
-                            Reflections
-                        </p>
-                    </div> -->
-                </div>
-                <!-- <p class="text-xs text-end max-w-none mt-1">
-                    Photo by
-                    <a
-                        href="https://unsplash.com/@bardcanele?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-                        >Barb Canale</a
-                    >
-                    on
-                    <a
-                        href="https://unsplash.com/photos/calm-body-of-water-near-green-trees-and-mountain-at-daytime-YDG0lDHz9PI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-                        >Unsplash</a
-                    >
-                </p> -->
+                ></div>
             </section>
 
             <div id="about" class="border-t border-b py-16 bg-backgroundAccent">
@@ -92,7 +72,7 @@
                     >
                         <div>
                             <img
-                                class="object-cover filter max-h-96 transition rounded-lg"
+                                class="filter max-h-96 transition rounded-lg"
                                 src="~/assets/images/reflectionsTwo.webp"
                                 alt=""
                             />
@@ -124,7 +104,7 @@
                     >
                         <div>
                             <img
-                                class="object-cover filter max-h-96 transition rounded-lg"
+                                class="filter max-h-96 transition rounded-lg"
                                 src="~/assets/images/reflectionsThree.webp"
                                 alt=""
                             />
@@ -230,7 +210,7 @@ section {
 }
 
 .hero {
-    background: url("~/assets/images/reflectionsTwo.webp");
+    background: url("~/assets/images/reflectionsOne.webp");
     background-position: center;
     background-size: cover;
 }

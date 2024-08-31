@@ -56,7 +56,7 @@ const isValidEmail = computed(() => {
 
 const send = () => {
     const templateParams = {
-        website: "davidsorensen.bio",
+        website: "Reflections",
         name: "",
         email: email.value,
         comment: message.value,
