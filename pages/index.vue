@@ -24,11 +24,11 @@
                             helps patients combat negative self-talk while
                             learning new strategies to gain confidence.
                         </p>
-                        <br />
+                        <!-- <br />
                         <p class="text-[var(--color-text)] text-center">
                             Our next six-week session begins
                             <strong> October 1st, 2024. </strong>
-                        </p>
+                        </p> -->
                     </div>
                 </section>
             </div>
